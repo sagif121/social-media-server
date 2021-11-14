@@ -1,0 +1,29 @@
+@local = http://localhost:5000
+
+### LOGIN ###
+POST {{local}}/users/login
+Content-Type: application/json
+
+{
+    "email": "Sagif121@gmail.com",
+    "password": "123456"
+}
+
+
+### GET USER ONLINE ###
+GET {{local}}/users
+Content-Type: application/json
+
+
+### GET USER ONLINE ###
+POST {{local}}/users/logout
+Content-Type: application/json
+
+### New Post ###
+POST {{local}}/posts/newPost
+Content-Type: application/json
+
+{
+   "content" : "heelo from roi",
+   "createdBy" : "roi"
+}
