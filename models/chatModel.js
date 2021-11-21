@@ -1,7 +1,5 @@
 const mongoose = require("mongoose");
-// const joi = require("joi");
-// const { string } = require("joi");
-// const jwt = require("jsonwebtoken");
+
 const chatSchema = new mongoose.Schema({
   username: { type: String },
   conntent: { type: String },
